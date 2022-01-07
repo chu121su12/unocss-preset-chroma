@@ -1,0 +1,5 @@
+/* layer: default */
+.chroma-linear-hsl-\#008000-\#ff00ff{--un-gradient-direction:0;background-image:linear-gradient(var(--un-gradient-direction),rgb(0,128,0) 0%,rgb(0,135,21) 16%,rgb(0,140,41) 33%,rgb(216,0,249) 50%,rgb(228,0,251) 66%,rgb(241,0,253) 83%,rgb(255,0,255) 100%);}
+.chroma-linear-lab-\#000080-\#ffff00{--un-gradient-direction:0;background-image:linear-gradient(var(--un-gradient-direction),rgb(0,0,128) 0%,rgb(86,43,123) 16%,rgb(127,82,116) 33%,rgb(163,123,107) 50%,rgb(195,166,93) 66%,rgb(225,210,70) 83%,rgb(255,255,0) 100%);}
+.chroma-linear-lch-\#800000-\#00ffff{--un-gradient-direction:0;background-image:linear-gradient(var(--un-gradient-direction),rgb(128,0,0) 0%,rgb(136,67,0) 16%,rgb(134,111,0) 33%,rgb(122,151,46) 50%,rgb(99,188,109) 66%,rgb(59,223,180) 83%,rgb(0,255,255) 100%);}
+.chroma-linear-direction-30{--un-gradient-direction:30deg;}
