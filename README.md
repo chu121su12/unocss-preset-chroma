@@ -24,12 +24,12 @@ pnpm add unocss-preset-chroma unocss -D # with pnpm
 ```js
 // unocss.config.js
 import { presetUno, defineConfig } from 'unocss'
-import { presetTypography } from 'unocss-preset-chroma'
+import { presetChroma } from 'unocss-preset-chroma'
 
 export default defineConfig({
   presets: [
     presetUno(), // for color theme
-    presetTypography(),
+    presetChroma(),
   ],
 })
 ```
