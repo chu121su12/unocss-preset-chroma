@@ -1,6 +1,6 @@
 {
   "name": "unocss-preset-chroma",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "chroma-js gradient for UnoCSS",
   "engines": {
     "node": ">=14.18"
