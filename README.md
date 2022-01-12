@@ -36,13 +36,18 @@ export default defineConfig({
 
 ## Utilities
 
-`chroma-linear-<mode>-<color-1>-<color-2>-<color-n>`
+`chroma-<gradient>-<mode>-<color-1>-<color-2>-<color-n>`
 
-Value for `mode` are: `rgb`, `lab`, `hsl`, or `lch`.
+- Value for `gradient` are: `linear`, `radial`, or `conic`.
+- Value for `mode` are: `rgb`, `lab`, `hsl`, or `lch`.
 
 `chroma-linear-direction-<angle>`
 
 For rotating the gradient.
+
+`chroma-direction-[<direction>]`
+
+For orienting the gradient (especially radial & conic gradient).
 
 ### Type of `ChromaOptions`
 

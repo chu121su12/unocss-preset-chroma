@@ -30,8 +30,8 @@ export function presetChroma(options: ChromaOptions = {}): Preset {
     name: 'unocss-preset-chroma',
     rules: [
       [
-        new RegExp(`^${prefix}(?:linear-)?(rgb|lab|hsl|lch)((?:-(?:\\w+(?:-\\d+)?|(?:#|hex-)[0-9a-f]{3,8})(?:\\/\\d+)?){2,})$`),
-        ([, mode, body], { theme }) => {
+        new RegExp(`^${prefix}(?:(linear|radial|conic)-)?(rgb|lab|hsl|lch)((?:-(?:\\w+(?:-\\d+)?|(?:#|hex-)[0-9a-f]{3,8})(?:\\/\\d+)?){2,})$`),
+        ([, gradient = 'linear', mode, body], { theme }) => {
           const cs: any[] = []
           while (true) {
             const m = body.match(colorBodyRe)
@@ -58,11 +58,20 @@ export function presetChroma(options: ChromaOptions = {}): Preset {
               .map(([c, p]) => `rgb(${c}) ${p}%`)
             g.push(last ? r : r.slice(0, -1))
           }
+
           return {
-            '--un-gradient-direction': '0',
-            'background-image': `linear-gradient(var(--un-gradient-direction),${g.join(',')})`,
+            '--un-gradient-direction': {
+              linear: '0deg',
+              radial: 'circle at 50% 50%',
+              conic: 'at 50% 50%',
+            }[gradient],
+            'background-image': `${gradient}-gradient(var(--un-gradient-direction),${g.join(',')})`,
           }
         },
+      ],
+
+      [
+        new RegExp(`^${prefix}direction-\\[(.+)\\]$`), ([, s]) => ({ '--un-gradient-direction': s.replace(/_/g, ' ') }),
       ],
 
       [
