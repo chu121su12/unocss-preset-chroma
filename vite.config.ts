@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import { presetUno } from 'unocss'
 import { presetChroma } from './src'
+import { presetTypography } from 'unocss-preset-typography'
 import unocss from 'unocss/vite'
 
 export default defineConfig(({ mode }) => ({
@@ -8,6 +9,20 @@ export default defineConfig(({ mode }) => ({
     unocss({
       presets: [
         presetUno(),
+        presetTypography({
+          cssExtend: {
+            code: {
+              color: '#8b5cf6',
+            },
+            'a:hover': {
+              color: '#f43f5e',
+              'text-decoration': 'none',
+            },
+            'a:visited': {
+              color: '#14b8a6',
+            },
+          },
+        }),
         presetChroma(),
       ],
     }),

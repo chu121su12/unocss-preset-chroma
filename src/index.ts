@@ -77,6 +77,8 @@ export function presetChroma(options: ChromaOptions = {}): Preset {
   }
 }
 
+export default presetChroma
+
 function resolveChroma(steps: number, mode: string, start: string, end: string) {
   const scale = chroma.scale([start, end]).mode(mode).correctLightness()
   return [...Array(steps).keys()].map((_, i) => {

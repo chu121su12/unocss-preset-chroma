@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UnoCSS Preset Chroma</title>
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/antfu/unocss/main/playground/public/favicon.svg"
+      type="image/svg+xml"
+    />
+  </head>
+
+  <body class="bg-white font-sans m-0 py-6 px-4 antialiased prose mx-auto">
+    <main class="mx-auto text-base">
+      <a
+        href="https://github.com/chu121su12/unocss-preset-chroma"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub</a
+      >
+      <div id="readme"></div>
+
+      <h2>Demo</h2>
+      <div class="border rounded-lg p-4 mb-4">
+        <code>chroma-rgb-#ff0-#00f chroma-linear-direction-90</code>
+        <div class="mb-4 rounded-md h-24 chroma-rgb-#ff0-#00f chroma-linear-direction-90"></div>
+
+        <code>chroma-lab-#ff0-#00f chroma-linear-direction-90</code>
+        <div class="mb-4 rounded-md h-24 chroma-lab-#ff0-#00f chroma-linear-direction-90"></div>
+
+        <code>chroma-hsl-#ff0-#00f chroma-linear-direction-90</code>
+        <div class="mb-4 rounded-md h-24 chroma-hsl-#ff0-#00f chroma-linear-direction-90"></div>
+
+        <code>chroma-lch-#ff0-#00f chroma-linear-direction-90</code>
+        <div class="mb-4 rounded-md h-24 chroma-lch-#ff0-#00f chroma-linear-direction-90"></div>
+      </div>
+
+      <div class="border rounded-lg p-4">
+        <code>chroma-rgb-#f74141-#81e6c8-#055699 chroma-linear-direction-60</code>
+        <div class="mb-4 rounded-md h-24 chroma-rgb-#f74141-#81e6c8-#055699 chroma-linear-direction-60"></div>
+
+        <code>chroma-lab-#f74141-#81e6c8-#055699 chroma-linear-direction-60</code>
+        <div class="mb-4 rounded-md h-24 chroma-lab-#f74141-#81e6c8-#055699 chroma-linear-direction-60"></div>
+
+        <code>chroma-hsl-#f74141-#81e6c8-#055699 chroma-linear-direction-60</code>
+        <div class="mb-4 rounded-md h-24 chroma-hsl-#f74141-#81e6c8-#055699 chroma-linear-direction-60"></div>
+
+        <code>chroma-lch-#f74141-#81e6c8-#055699 chroma-linear-direction-60</code>
+        <div class="mb-4 rounded-md h-24 chroma-lch-#f74141-#81e6c8-#055699 chroma-linear-direction-60"></div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/shiki"></script>
+    <script type="module">
+      import 'uno.css'
+      import { marked } from 'marked'
+      import readme from './README.md?raw'
+
+      document.getElementById('readme').innerHTML = marked.parse(readme, {
+        langPrefix: '',
+      })
+
+      const preBlocks = document.querySelectorAll('pre')
+
+      shiki
+        .getHighlighter({
+          theme: 'material-palenight',
+          langs: ['html', 'sh', 'js', 'ts'],
+        })
+        .then((hl) => {
+          for (const block of preBlocks) {
+            block.outerHTML = hl.codeToHtml(
+              block.textContent,
+              block.firstElementChild.className || 'text',
+            )
+          }
+        })
+    </script>
+  </body>
+</html>

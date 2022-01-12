@@ -67,6 +67,7 @@ export interface ChromaOptions {
 
 - [Polychroma](https://polychroma.app/)
 - [chroma.js](https://vis4.net/chromajs/)
+- [Make Beautiful Gradients](https://www.joshwcomeau.com/css/make-beautiful-gradients/) by Josh Comeau
 
 ## License
 
