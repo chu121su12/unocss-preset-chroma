@@ -36,18 +36,23 @@ export default defineConfig({
 
 ## Utilities
 
-`chroma-<gradient>-<mode>-<color-1>-<color-2>-<color-n>`
+- Shorthand gradient + stops:
 
-- Value for `gradient` are: `linear`, `radial`, or `conic`.
-- Value for `mode` are: `rgb`, `lab`, `hsl`, or `lch`.
+  `chroma-(linear|radial|conic)-(rgb|lab|hsl|lch)-<colors>`
 
-`chroma-linear-direction-<angle>`
+  Where `<colors>` is dash-separated hex color.
 
-For rotating the gradient.
+- Stops only:
 
-`chroma-direction-[<direction>]`
+  `chroma-stops-(rgb|lab|hsl|lch)-<color-1>-<color-2>-<color-n>`
 
-For orienting the gradient (especially radial & conic gradient).
+- Shape:
+
+  `chroma-shape-[contour/size/potiion/direction/etc]`
+
+- Base gradient function (`background-image`):
+
+  `chroma-(linear|radial|conic)`
 
 ### Type of `ChromaOptions`
 
@@ -77,3 +82,7 @@ export interface ChromaOptions {
 ## License
 
 MIT
+
+## Demo
+
+Clone the repo, run `pnpm dev`.
