@@ -8,7 +8,6 @@ specifiers:
   marked: ^4.2.12
   typescript: ^4.9.5
   unocss: ^0.50.4
-  uvu: ^0.5.6
   vite: ^4.1.4
   vitest: ^0.29.2
 
@@ -22,7 +21,6 @@ devDependencies:
   marked: 4.2.12
   typescript: 4.9.5
   unocss: 0.50.4_vite@4.1.4
-  uvu: 0.5.6
   vite: 4.1.4_@types+node@18.14.6
   vitest: 0.29.2
 
@@ -708,18 +706,8 @@ packages:
     resolution: {integrity: sha512-+uO4+qr7msjNNWKYPHqN/3+Dx3NFkmIzayk2L1MyZQlvgZb/J1A0fo410dpKrN2SnqFjt8n4JL8fDJE0wIgjFQ==}
     dev: true
 
-  /dequal/2.0.2:
-    resolution: {integrity: sha512-q9K8BlJVxK7hQYqa6XISGmBZbtQQWVXSrRrWreHC94rMt1QL/Impruc+7p2CYSYuVIUr+YCt6hjrs1kkdJRTug==}
-    engines: {node: '>=6'}
-    dev: true
-
   /destr/1.2.2:
     resolution: {integrity: sha512-lrbCJwD9saUQrqUfXvl6qoM+QN3W7tLV5pAOs+OqOmopCCz/JkE05MHedJR1xfk4IAnZuJXPVuN5+7jNA2ZCiA==}
-    dev: true
-
-  /diff/5.0.0:
-    resolution: {integrity: sha512-/VTCrvm5Z0JGty/BWHljh+BAiw3IK+2j87NGMu8Nwc/f48WoDAC395uomO9ZD117ZOBaHmkX1oyLvkVM/aIT3w==}
-    engines: {node: '>=0.3.1'}
     dev: true
 
   /diff/5.1.0:
@@ -920,11 +908,6 @@ packages:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
     dev: true
 
-  /kleur/4.1.4:
-    resolution: {integrity: sha512-8QADVssbrFjivHWQU7KkMgptGTl6WAcSdlbBPY4uNF+mWr6DGcKrvY2w4FQJoXch7+fKMjj0dRrL75vk3k23OA==}
-    engines: {node: '>=6'}
-    dev: true
-
   /kolorist/1.7.0:
     resolution: {integrity: sha512-ymToLHqL02udwVdbkowNpzjFd6UzozMtshPQKVi5k1EjKRqKqBrOnE9QbLEb0/pV76SAiIT13hdL8R6suc+f3g==}
     dev: true
@@ -993,11 +976,6 @@ packages:
       pathe: 1.1.0
       pkg-types: 1.0.2
       ufo: 1.1.1
-    dev: true
-
-  /mri/1.2.0:
-    resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
-    engines: {node: '>=4'}
     dev: true
 
   /mrmime/1.0.0:
@@ -1171,13 +1149,6 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /sade/1.8.1:
-    resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
-    engines: {node: '>=6'}
-    dependencies:
-      mri: 1.2.0
-    dev: true
-
   /shebang-command/2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
     engines: {node: '>=8'}
@@ -1345,17 +1316,6 @@ packages:
       - rollup
       - supports-color
       - vite
-    dev: true
-
-  /uvu/0.5.6:
-    resolution: {integrity: sha512-+g8ENReyr8YsOc6fv/NVJs2vFdHBnBNdfE49rshrTzDWOlUx4Gq7KOS2GD8eqhy2j+Ejq29+SbKH8yjkAqXqoA==}
-    engines: {node: '>=8'}
-    hasBin: true
-    dependencies:
-      dequal: 2.0.2
-      diff: 5.0.0
-      kleur: 4.1.4
-      sade: 1.8.1
     dev: true
 
   /vite-node/0.29.2_@types+node@18.14.6:
