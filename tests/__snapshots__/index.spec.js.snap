@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`chroma preset > generate gradient css 1`] = `
+"/* layer: default */
+.chroma-conic-hsl-\\\\#a08df7-\\\\#fff-\\\\#ffe261{--un-gradient-shape:at 50% 50%;--un-gradient-stops:rgb(160,141,247) 0%,rgb(174,158,248) 7%,rgb(187,173,249) 14%,rgb(201,190,250) 21%,rgb(214,206,252) 28%,rgb(228,223,253) 35%,rgb(241,238,254) 42%,rgb(255,255,255) 50%,rgb(255,251,230) 58%,rgb(255,246,208) 66%,rgb(255,241,181) 75%,rgb(255,237,154) 83%,rgb(255,232,127) 91%,rgb(255,226,97) 100%;--un-gradient:var(--un-gradient-shape), var(--un-gradient-stops);background-image:conic-gradient(var(--un-gradient));}
+.chroma-linear-hsl-\\\\#008000-\\\\#ff00ff{--un-gradient-shape:0deg;--un-gradient-stops:rgb(0,128,0) 0%,rgb(0,135,21) 16%,rgb(0,140,41) 33%,rgb(216,0,249) 50%,rgb(228,0,251) 66%,rgb(241,0,253) 83%,rgb(255,0,255) 100%;--un-gradient:var(--un-gradient-shape), var(--un-gradient-stops);background-image:linear-gradient(var(--un-gradient));}
+.chroma-linear-lab-\\\\#000080-\\\\#ffff00{--un-gradient-shape:0deg;--un-gradient-stops:rgb(0,0,128) 0%,rgb(86,43,123) 16%,rgb(127,82,116) 33%,rgb(163,123,107) 50%,rgb(195,166,93) 66%,rgb(225,210,70) 83%,rgb(255,255,0) 100%;--un-gradient:var(--un-gradient-shape), var(--un-gradient-stops);background-image:linear-gradient(var(--un-gradient));}
+.chroma-linear-lch-\\\\#800000-\\\\#00ffff{--un-gradient-shape:0deg;--un-gradient-stops:rgb(128,0,0) 0%,rgb(136,67,0) 16%,rgb(134,111,0) 33%,rgb(122,151,46) 50%,rgb(99,188,109) 66%,rgb(59,223,180) 83%,rgb(0,255,255) 100%;--un-gradient:var(--un-gradient-shape), var(--un-gradient-stops);background-image:linear-gradient(var(--un-gradient));}
+.chroma-rgb-\\\\#ff0-\\\\#00f{--un-gradient-shape:0deg;--un-gradient-stops:rgb(255,255,0) 0%,rgb(223,223,32) 16%,rgb(192,192,63) 33%,rgb(161,161,94) 50%,rgb(129,129,126) 66%,rgb(95,95,160) 83%,rgb(0,0,255) 100%;--un-gradient:var(--un-gradient-shape), var(--un-gradient-stops);background-image:linear-gradient(var(--un-gradient));}
+.chroma-shape-\\\\[90deg\\\\]{--un-gradient-shape:90deg;--un-gradient:var(--un-gradient-shape), var(--un-gradient-stops);}"
+`;

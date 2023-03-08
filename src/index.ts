@@ -109,7 +109,7 @@ function resolveStops(steps: number, mode: string, body: string, theme: any) {
   for (let i = 0; i < s; i++) {
     const last = i === s - 1
     const r = resolveChroma(last ? steps : steps + 1, mode, cs[i].color, cs[i + 1].color)
-      .map(([c, p])  => [parseColor(c, theme)!.rgba!.join(','), Math.floor(i * 100 / s + p / s)])
+      .map(([c, p])  => [parseColor(c, theme)?.cssColor?.components?.join(','), Math.floor(i * 100 / s + p / s)])
       .map(([c, p]) => `rgb(${c}) ${p}%`)
     g.push(last ? r : r.slice(0, -1))
   }

@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import { presetUno } from 'unocss'
 import { presetChroma } from './src'
-import { presetTypography } from 'unocss-preset-typography'
+import { presetTypography } from 'unocss'
 import unocss from 'unocss/vite'
 
 export default defineConfig(({ mode }) => ({
